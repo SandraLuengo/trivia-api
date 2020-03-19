@@ -12,10 +12,12 @@ const Table = ({ className }) => {
   return (
     <div className={className}>
       <h1>{tableTitle}</h1>
-      <table className='table'>
+      <table className="table">
         <thead>
           <tr>
-            <th>ID</th>
+            <th>
+              ID <i className="table__sort fa fa-sort" />
+            </th>
             <th>Category</th>
             <th>Type</th>
             <th>Difficulty</th>
@@ -28,12 +30,12 @@ const Table = ({ className }) => {
             questions.map((questions, i) => {
               return (
                 <tr key={`row-${i}`}>
-                  <td>{i}</td>
-                  <td>{questions.category}</td>
-                  <td>{questions.type}</td>
-                  <td>{questions.difficulty}</td>
-                  <td >{questions.question}</td>
-                  <td className='table__created'>Sandra</td>
+                  <td className="table__id">{i}</td>
+                  <td className="table__category">{questions.category}</td>
+                  <td className="table__type">{questions.type}</td>
+                  <td className="table__difficulty">{questions.difficulty}</td>
+                  <td className="table__question">{questions.question}</td>
+                  <td className="table__created">Sandra</td>
                 </tr>
               );
             })}

@@ -1,0 +1,10 @@
+{
+  "header": [
+    { "title": "browse", "logo": "fa fa-bars" },
+    { "title": "add new question", "logo": "fa fa-plus" },
+    { "title": "api", "logo": "fa fa-gears" },
+    { "title": "discuss", "logo": "fa fa-comments" },
+    { "title": "login", "logo": "fa fa-sign-in" }
+  ],
+  "tableTitle": "Browse Questions"
+}

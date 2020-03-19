@@ -13,4 +13,14 @@ const getQuestions = token => {
     .catch(err => console.log(err));
 };
 
-export { getToken, getQuestions };
+const getCategories = () => {
+  return axios
+    .get(`https://opentdb.com/api_category.php`)
+    .then(categories => {
+      let categoriesName = categories.data.trivia_categories.map(category => category.name);
+      return categoriesName;
+    })
+    .catch(err => console.log(err));
+};
+
+export { getToken, getQuestions, getCategories };

@@ -7,7 +7,7 @@ import "./App.css";
 const App = () => {
   return (
     <Provider reducer={reducer} initialState={initialState}>
-      <ContainerHome />>
+      <ContainerHome />
     </Provider>
   );
 };

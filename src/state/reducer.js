@@ -1,5 +1,6 @@
 const initialState = {
-  token: false
+  token: false,
+  categories:false
 };
 
 const reducer = (state, action) => {
@@ -8,6 +9,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         token: action.newValue
+      };
+    case "SET_CATEGORIES":
+      return {
+        ...state,
+        categories: action.newValue
       };
     default:
       return state;

@@ -6,5 +6,9 @@
     { "title": "discuss", "logo": "fa fa-comments" },
     { "title": "login", "logo": "fa fa-sign-in" }
   ],
-  "tableTitle": "Browse Questions"
+  "tableTitle": "Browse Questions",
+  "filters": [
+    ["Any Difficulty", "Easy", "Medium", "Hard"],
+    ["Any Type", "multiple", "true/false"]
+  ]
 }

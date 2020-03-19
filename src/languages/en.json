@@ -8,7 +8,7 @@
   ],
   "tableTitle": "Browse Questions",
   "filters": [
-    ["Any Difficulty", "Easy", "Medium", "Hard"],
-    ["Any Type", "multiple", "true/false"]
+    { "difficulty": ["easy", "medium", "hard"] },
+    { "type": ["multiple", "true/false"] }
   ]
 }

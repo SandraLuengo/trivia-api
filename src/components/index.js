@@ -5,7 +5,7 @@ import TableContainer from "./TableContainer/TableContainer.styled";
 import Filters from "./TableContainer/Filters/Filters.styled";
 import Table from "./TableContainer/Table/Table.styled";
 import Pagination from "./TableContainer/Pagination/Pagination.styled";
-import Select from "./TableContainer/Filters/Select/Select";
+import Select from "./TableContainer/Filters/Select/Select.styled";
 
 export {
   ContainerHome,

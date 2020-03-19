@@ -17,10 +17,21 @@ const getCategories = () => {
   return axios
     .get(`https://opentdb.com/api_category.php`)
     .then(categories => {
-      let categoriesName = categories.data.trivia_categories.map(category => category.name);
+      let categoriesName = categories.data.trivia_categories.map(
+        category => category.name
+      );
       return categoriesName;
     })
     .catch(err => console.log(err));
 };
 
-export { getToken, getQuestions, getCategories };
+const getFilteredQuestions = ({ category, type, difficulty }) => {
+  return axios
+    .get(
+      `https://opentdb.com/api.php?amount=10&category=${category}&difficulty=${difficulty}&type=${type}`
+    )
+    .then(questions => questions.data.results)
+    .catch(err => console.log(err));
+};
+
+export { getToken, getQuestions, getCategories, getFilteredQuestions };

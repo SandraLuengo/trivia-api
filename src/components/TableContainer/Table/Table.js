@@ -4,11 +4,12 @@ import { useGlobalState } from ".././../../state/useGlobalState";
 import { getQuestions } from "../../../services/questionsService";
 
 const Table = ({ className }) => {
-  const [{ token }] = useGlobalState();
-  const [questions, setQuestions] = useState(false);
+  const [{ token, questions }, dispatch] = useGlobalState();
   useEffect(() => {
-    getQuestions(token).then(questions => setQuestions(questions));
-  }, [token]);
+    getQuestions(token).then(questions =>
+      dispatch({ type: "SET_QUESTIONS", newValue: questions })
+    );
+  }, [dispatch, token]);
   return (
     <div className={className}>
       <h1>{tableTitle}</h1>

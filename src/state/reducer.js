@@ -1,6 +1,6 @@
 const initialState = {
   token: false,
-  categories:false
+  questions: false
 };
 
 const reducer = (state, action) => {
@@ -10,10 +10,10 @@ const reducer = (state, action) => {
         ...state,
         token: action.newValue
       };
-    case "SET_CATEGORIES":
+    case "SET_QUESTIONS":
       return {
         ...state,
-        categories: action.newValue
+        questions: action.newValue
       };
     default:
       return state;

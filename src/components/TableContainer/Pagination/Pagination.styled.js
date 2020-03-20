@@ -8,7 +8,7 @@ export default styled(Pagination).attrs({})`
   align-items: center;
   width: 30%;
   border-radius: 4px;
-  height: 8 vh;
+  height: 8vh;
   margin: 3% 0;
   .numbers {
     width: 20%;

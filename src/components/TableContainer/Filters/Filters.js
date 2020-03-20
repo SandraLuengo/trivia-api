@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Select } from "../../../components";
 import { filters } from "../../../languages/en";
 import { useGlobalState } from "../../../state/useGlobalState";
@@ -13,7 +13,7 @@ const updateQuestions = (selectedFilters, dispatch) => {
 const Filters = ({ className }) => {
   let filterObj = { category: "", type: "", difficulty: "" };
   const [selectedFilters, setSelectedFilters] = useState(filterObj);
-  const [{},dispatch] = useGlobalState();
+  const [{}, dispatch] = useGlobalState();
 
   return (
     <div className={className}>

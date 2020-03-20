@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { tableTitle } from "../../../languages/en";
 import { useGlobalState } from ".././../../state/useGlobalState";
 import { getQuestions } from "../../../services/questionsService";

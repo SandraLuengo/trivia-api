@@ -4,7 +4,7 @@
 
 | Project | Description |
 |---------|-------------|
-| [react]               | Single page application |
+| [react]               | As Front-End Framework |
 | [Context Api]               |Global State Manager |
 | [styled-components]        |Css with javascript logic|
 

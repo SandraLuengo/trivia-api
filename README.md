@@ -19,7 +19,7 @@ git clone https://github.com/SandraLuengo/trivia-api
 Run the client:
 ````
 cd trivia-api/
-yarn install
+yarn 
 yarn start
 ````
 

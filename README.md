@@ -25,7 +25,7 @@ yarn start
 
 Run tests in client:
 `````
-cd client/
+cd trivia-api/
 yarn test
 `````
 
